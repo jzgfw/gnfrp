@@ -27,7 +27,7 @@ function OnAction(control) {
                 }
                 // alert(doc.Name)
 	        let s = ["M1         DN500上人孔（带盖,提手）","","16.59","11.29"];
-                        doc.Range(doc.Selection.Address()).Resize(1,4).Value2 = s; 
+                        doc.Range("A8").Resize(1,4).Value2 = s; 
             }
             break;
         case "btnIsEnbable":
