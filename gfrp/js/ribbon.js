@@ -26,7 +26,8 @@ function OnAction(control) {
                     return
                 }
                 // alert(doc.Name)
-		    
+	        let s = ["M1         DN500上人孔（带盖,提手）","","16.59","11.29"];
+                        doc.Range(doc.Selection.Address()).Resize(1,4).Value2 = s; 
             }
             break;
         case "btnIsEnbable":
@@ -152,6 +153,3 @@ function OnNewDocumentApiEvent(doc){
     alert("新建文件事件响应，取文件名: " + doc.Name)
 }
 
-function fw_钢板重量2024(面积,厚度){
-	return(面积*厚度*7.85*1.15);
-}
