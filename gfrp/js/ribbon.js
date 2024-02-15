@@ -25,7 +25,8 @@ function OnAction(control) {
                     alert("当前没有打开任何文档")
                     return
                 }
-                alert(doc.Name)
+                // alert(doc.Name)
+		    
             }
             break;
         case "btnIsEnbable":
@@ -149,4 +150,8 @@ function OnGetLabel(control){
 
 function OnNewDocumentApiEvent(doc){
     alert("新建文件事件响应，取文件名: " + doc.Name)
+}
+
+function fw_钢板重量2024(面积,厚度){
+	return(面积*厚度*7.85*1.15);
 }
