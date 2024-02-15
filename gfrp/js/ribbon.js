@@ -26,8 +26,9 @@ function OnAction(control) {
                     return
                 }
                 // alert(doc.Name)
-	        let s = ["M1         DN500上人孔（带盖,提手）","","16.59","11.29"];
-                        doc.Range("A8").Resize(1,4).Value2 = s; 
+	        // let s = ["M1         DN500上人孔（带盖,提手）","","16.59","11.29"];
+         //                doc.Range("A8").Resize(1,4).Value2 = s; 
+		doc.Range("a8").Value2="2024 你好,河北"
             }
             break;
         case "btnIsEnbable":
